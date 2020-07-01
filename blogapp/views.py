@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateBlog
 from .models import Blog, Comment
 from .forms import BlogCommentForm
+import requests
 import json
 
 # Create your views here.

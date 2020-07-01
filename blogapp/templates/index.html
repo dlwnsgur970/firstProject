@@ -1,0 +1,43 @@
+{% load static %}
+<head>
+  <style type="text/css">
+    .background {
+    background : url('../static/css/index.png') no-repeat;
+    background-size : cover;
+    }
+  </style>
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body class="background" >
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand"></h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="https://www.youtube.com/user/withEverland">Youtube</a>
+        <a class="nav-link active" href="https://www.youtube.com/channel/UCILgj-Cl3aneZBoK3l_gasw">T-ta-nam</a>
+        <a class="nav-link active" href="https://www.witheverland.com/">Blog</a>
+        <a class="nav-link active" href="https://www.instagram.com/witheverland/">Instagram</a>
+        <a class="nav-link active" href="https://www.facebook.com/witheverland">Facebook</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading"><span style="color:white">에버랜드 두 배로 재밌게 즐기기!</span></h1>
+    <p class="lead"><span style="color:white">전) 에버랜드 캐스트가 직접 겪어본<br>에버랜드 두 배로 재밌게 즐기는 방법!</span></p>
+    <p class="lead">
+      <a href="{% url 'blogMain' %}" class="btn btn-lg btn-secondary">입장하기</a>
+      <a href="https://www.everland.com" class="btn btn-lg btn-secondary">에버랜드</a>
+    </p>
+
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>

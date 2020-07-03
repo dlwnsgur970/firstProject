@@ -7,39 +7,14 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="{% url 'blogMain' %}">Everland</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    <span class="navbar-toggler-icon"></span>
-    <span class="navbar-toggler-icon"></span>
-    <span class="navbar-toggler-icon"></span>
-    <span class="navbar-toggler-icon"></span>
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
+      {% for blog in blogs %}
       <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">사전 준비<span class="sr-only">(current)</span></a>
+        <a href="{% url 'detail' blog.id %}" class="nav-link">{{ blog.title }}<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">어트랙션</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">공연/축제</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">주토피아</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">레스토랑</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">기프트 샵</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ blog.id }}">전대리</a>
-      </li>
+      {% endfor %}
     </ul>
-
     <form class="form-inline mt-2 mt-md-0" action="{% url 'search' %}" method="POST">
       {% csrf_token %}
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="b" value="{{b}}">

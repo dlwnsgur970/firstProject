@@ -43,7 +43,7 @@ def detail(request, blog_id):
             login_request_uri = 'https://kauth.kakao.com/oauth/authorize?'
 
             client_id = 'b786a255e04f4b9b8060548b5508cf69'
-            redirect_uri = 'http://127.0.0.1:8000/oauth'
+            redirect_uri = 'http://dlwnsgur970.pythonanywhere.com//oauth'
 
             login_request_uri += 'client_id=' + client_id
             login_request_uri += '&redirect_uri=' + redirect_uri
@@ -105,12 +105,12 @@ def oauth(request):
         "content": {
             "title": "에버랜드 갈래?",
             "description": "놀거리 먹을거리 볼거리",
-            "image_url": "http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg",
+            "image_url": "https://postfiles.pstatic.net/MjAyMDA2MjZfMjk4/MDAxNTkzMTc5NzE1MTA5.5quj_hXXpZIzS1JQyIjUlprg4UcA9yZoTSEy1x2-BN8g.eote9LhI_qNUA80SQExJDeV1U9CVXEeeMoP_hZ_2jM8g.JPEG.dlwnsgur970/guide.jpg?type=w773",
             "image_width": 640,
             "image_height": 640,
             "link": {
-                "web_url": "http://www.daum.net",
-                "mobile_web_url": "http://m.daum.net",
+                "web_url": "http://dlwnsgur970.pythonanywhere.com/",
+                "mobile_web_url": "http://dlwnsgur970.pythonanywhere.com/",
                 "android_execution_params": "contentId=100",
                 "ios_execution_params": "contentId=100"
             }
@@ -126,8 +126,8 @@ def oauth(request):
             {
                 "title": "웹으로 이동",
                 "link": {
-                    "web_url": "http://www.daum.net",
-                    "mobile_web_url": "http://m.daum.net"
+                    "web_url": "http://dlwnsgur970.pythonanywhere.com/",
+                    "mobile_web_url": "http://dlwnsgur970.pythonanywhere.com/"
                 }
             },
             {

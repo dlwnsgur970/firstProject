@@ -43,7 +43,7 @@ def detail(request, blog_id):
             login_request_uri = 'https://kauth.kakao.com/oauth/authorize?'
 
             client_id = 'b786a255e04f4b9b8060548b5508cf69'
-            redirect_uri = 'http://dlwnsgur970.pythonanywhere.com//oauth'
+            redirect_uri = 'http://dlwnsgur970.pythonanywhere.com/oauth'
 
             login_request_uri += 'client_id=' + client_id
             login_request_uri += '&redirect_uri=' + redirect_uri
@@ -116,9 +116,9 @@ def oauth(request):
             }
         },
         "social": {
-            "like_count": 100,
-            "comment_count": 200,
-            "shared_count": 300,
+            "like_count": 33,
+            "comment_count": 12,
+            "shared_count": 27,
             "view_count": 400,
             "subscriber_count": 500
         },

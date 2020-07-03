@@ -184,3 +184,17 @@
 <script src="{% static 'css/detail/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 {% endblock %}
+
+
+import os
+import sys
+path = "/home/dlwnsgur970/firstProject"
+
+if path not in sys.path:
+    sys.path.append(path)
+
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+application = StaticFilesHandler(get_wsgi_application())

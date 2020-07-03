@@ -43,7 +43,7 @@ def detail(request, blog_id):
             login_request_uri = 'https://kauth.kakao.com/oauth/authorize?'
 
             client_id = 'b786a255e04f4b9b8060548b5508cf69'
-            redirect_uri = 'http://dlwnsgur970.pythonanywhere.com/oauth'
+            redirect_uri = 'http://dlwnsgur970.pythonanywhere.com'
 
             login_request_uri += 'client_id=' + client_id
             login_request_uri += '&redirect_uri=' + redirect_uri
